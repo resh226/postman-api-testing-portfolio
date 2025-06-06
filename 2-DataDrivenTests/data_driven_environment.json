@@ -1,0 +1,15 @@
+{
+	"id": "dd4790d4-86db-406d-91b5-dcc150b71a13",
+	"name": "Data Driven Env – Add Contact",
+	"values": [
+		{
+			"key": "btoken",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-06-06T19:38:57.997Z",
+	"_postman_exported_using": "Postman/11.48.5"
+}

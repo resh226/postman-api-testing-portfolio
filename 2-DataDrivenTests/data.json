@@ -1,0 +1,41 @@
+[
+{
+    "firstName": "Prunella",
+    "lastName": "Prewhip",
+    "birthdate": "1977-07-07",
+    "email": "pprunewhip@fake.com",
+    "phone": "8005551000",
+    "street1": "123 Main St.",
+    "street2": "Apartment Q",
+    "city": "New York",
+    "stateProvince": "NY",
+    "postalCode": "12345",
+    "country": "USA"
+},
+{
+    "firstName": "Sobhitha",
+    "lastName": "Prewhip",
+    "birthdate": "1977-07-07",
+    "email": "sobhitha@fake.com",
+    "phone": "8005551000",
+    "street1": "123 Main St.",
+    "street2": "Apartment Q",
+    "city": "New York",
+    "stateProvince": "NY",
+    "postalCode": "12345",
+    "country": "USA"
+},
+{
+    "firstName": "Rani",
+    "lastName": "Prewhip",
+    "birthdate": "1977-07-07",
+    "email": "rani@fake.com",
+    "phone": "8005551000",
+    "street1": "123 Main St.",
+    "street2": "Apartment Q",
+    "city": "New York",
+    "stateProvince": "NY",
+    "postalCode": "12345",
+    "country": "USA"
+}
+]

@@ -1,0 +1,87 @@
+{
+	"id": "3ebfaf32-8a5b-437f-b484-93ed7baf8d84",
+	"name": "Functional Env – Contact List API",
+	"values": [
+		{
+			"key": "firstName",
+			"value": "Kevin",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "secondName",
+			"value": "Jackson",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "contactId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "birthdate",
+			"value": "1990-01-01",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "email",
+			"value": "martin@fake.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "phone",
+			"value": "786456345",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "street1",
+			"value": "fsdfsdgsdg",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "street2",
+			"value": "fsgsg",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "city",
+			"value": "trete",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "stateProvince",
+			"value": "gfhfghfg",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postalCode",
+			"value": "435345",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "country",
+			"value": "US",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-06-06T15:09:50.202Z",
+	"_postman_exported_using": "Postman/11.48.5"
+}
