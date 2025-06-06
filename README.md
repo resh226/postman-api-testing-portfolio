@@ -30,8 +30,9 @@ postman-api-testing-portfolio/
 │   ├── performancetest-data.json
 │   └── bruteforce-data.json
 ├── reports/
-│   ├── performance-report.html          # Attached Postman performance result
-│   └── security-bruteforce-report.html  # Attached brute force result
+│   ├── registerUser-loadTest-report.html          # Attached Postman performance result
+│   └── validUserLogin-loadTest-report.html
+|   └── bruteforcetest-report.html  # Attached brute force result from security testing
 └── README.md
 ```
 
