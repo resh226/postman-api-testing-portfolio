@@ -27,15 +27,15 @@ jobs:
       # 🔹 Functional Tests
       - name: Run Functional Tests
         run: |
-          newman run FunctionalTests/functional_collection.json \
-          -e FunctionalTests/functional_environment.json \
+          newman run 1-FunctionalTests/functional_collection.json \
+          -e 2-FunctionalTests/functional_environment.json \
           -r cli,html --reporter-html-export test-results/html-report-functional.html
 
       # 🔹 Data Driven Tests
       - name: Run Data Driven Tests
         run: |
-          newman run DataDrivenTests/data_driven_collection.json \
-          -e DataDrivenTests/data_driven_environment.json \
+          newman run 2-DataDrivenTests/data_driven_collection.json \
+          -e 2-DataDrivenTests/data_driven_environment.json \
           -d DataDrivenTests/data.json \
           -r cli,html --reporter-html-export test-results/html-report-data-driven.html
 
