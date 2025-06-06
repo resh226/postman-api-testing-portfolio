@@ -73,13 +73,15 @@ postman-api-testing-portfolio/
 * 20 unique users registered using `performancetest-data.json`
 * Validated with 200/201 status checks, response time checks
 * **Tool Used:** Postman → Collection → Performance tab
-* **Result:** Attached in `reports/performance-report.html`
+* **Result:** Attached in test results/registerUser-loadTest-report.html`
 
 ### 2. **Valid Login Load Test**
 
 * Endpoint: `/users/login`
 * Used 20 valid user credentials
 * Test focuses on response time consistency and server throughput
+* **Tool Used:** Postman → Collection → Performance tab
+* **Result:** Attached in test results/validUserLogin-loadTest-report.html
 
 ---
 
@@ -89,8 +91,8 @@ postman-api-testing-portfolio/
 * Goal: Detect whether the system blocks or rate-limits repeated invalid logins
 * Collection: `bruteforcesimulation_collection.json`
 * Data File: `bruteforce-data.json`
-* Run with: Postman Collection → Performance tab
-* **Result:** Attached in `reports/security-bruteforce-report.html`
+* **Tool Used:** Postman → Collection → Performance tab(upload the json file before starting run)
+* **Result:** Attached in test results/bruteforcetest-report.html ``
 
 ### 🔍 Observations:
 
