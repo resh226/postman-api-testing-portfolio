@@ -14,28 +14,37 @@ Welcome to my **Postman API Testing Portfolio**, a hands-on showcase of my API t
 
 ```
 postman-api-testing-portfolio/
-├── .github/
-│   └── workflows/
-│       └── postman-ci.yml               # GitHub Actions workflow file
-├── collections/
-│   ├── functional_collection.json       # Positive and Negative tests
-│   ├── data_driven_collection.json      # Tests using data.json
-│   ├── performancetest_collection.json  # Performance test scenarios
-│   └── bruteforcesimulation_collection.json  # Security brute force test
-├── environments/
-│   ├── functional_environment.json
-│   └── data_driven_environment.json
-├── data/
-│   ├── data.json                        # Input for data-driven tests
-│   ├── performancetest-data.json
-│   └── bruteforce-data.json
-├── reports/
-│   ├── registerUser-loadTest-report.html          # Attached Postman performance result
-│   └── validUserLogin-loadTest-report.html
-|   └── bruteforcetest-report.html  # Attached brute force result from security testing
-└── README.md
-```
+│
+├── .github/workflows/
+│   └── postman-ci.yml                 # GitHub Actions workflow for CI/CD
+│
+├── 1-FunctionalTests/
+│   ├── functional_collection.json     # Collection for Functional API Tests with positive and negative scenarios
+│   └── functional_environment.json    # Environment for Functional Tests
+│
+├── 2-DataDrivenTests/
+│   ├── data.json                      # Test data for data-driven testing
+│   ├── data_driven_collection.json   # Collection for Data-Driven Tests
+│   └── data_driven_environment.json  # Environment for Data-Driven Tests
+│
+├── 3-PerformanceTests/
+│   ├── performancetest-data.json     # Data for performance test scenarios
+│   └── performancetest_collection.json  # Collection for Performance Testing
+│
+├── 4-SecurityTests/
+│   ├── bruteforce-data.json              # Invalid password data set (brute force)
+│   └── bruteforcesimulation_collection.json  # Brute force simulation collection
+│
+├── test results/
+│   ├── functional_report.html              # Functional test report
+│   ├── data-driven_report.html            # Data-driven test report
+│   ├── registerUser-loadTest-report.html  # Performance: Register API test
+│   ├── validUserLogin-loadTest-report.html# Performance: Login API test
+│   └── bruteforcetest-report.html         # Security: Brute force attack simulation
+│
+└── README.md                              # Documentation and usage instructions
 
+```
 ---
 
 ## ✅ Functional Testing
