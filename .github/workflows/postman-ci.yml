@@ -1,0 +1,47 @@
+name: Run Functional and Data Driven Postman Tests with HTML Reports
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  postman-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install Newman and Reporter
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-html
+
+      # 🔹 Functional Tests
+      - name: Run Functional Tests
+        run: |
+          newman run FunctionalTests/functional_collection.json \
+          -e FunctionalTests/functional_environment.json \
+          -r cli,html --reporter-html-export test-results/html-report-functional.html
+
+      # 🔹 Data Driven Tests
+      - name: Run Data Driven Tests
+        run: |
+          newman run DataDrivenTests/data_driven_collection.json \
+          -e DataDrivenTests/data_driven_environment.json \
+          -d DataDrivenTests/data.json \
+          -r cli,html --reporter-html-export test-results/html-report-data-driven.html
+
+      # 🔸 Upload HTML Reports
+      - name: Upload HTML Test Reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-html-reports
+          path: test-results/
