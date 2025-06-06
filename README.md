@@ -7,8 +7,8 @@ Welcome to my **Postman API Testing Portfolio**, a hands-on showcase of my API t
 * 🚀 **Performance Testing** (Register & Login APIs)
 * 🔐 **Security Testing** (Brute Force Simulation)
 * ⚙️ **CI/CD Integration with GitHub Actions** (for Functional and Data-Driven collections)
-
----
+* 
+----
 
 ## 📁 Project Structure
 
