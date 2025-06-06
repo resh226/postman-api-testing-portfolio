@@ -57,7 +57,7 @@ postman-api-testing-portfolio/
 * Collection: `functional_collection.json`
 * Environment: `functional_environment.json`
 * Run with: `newman` via GitHub Actions (Included in `postman-ci.yml` workflow)
-* Report: See test-results/functional-test-report.html
+* Report: See test results/functional_report.html
 ---
 
 ## 🔁 Data-Driven Testing
@@ -69,7 +69,7 @@ postman-api-testing-portfolio/
 *Environment: data_driven_environment.json
 *Assertions: Validates fields like firstName, email, etc.
 *Run with: GitHub Actions using Newman + JSON (Included in `postman-ci.yml` workflow)
-*Report: See test-results/data-driven-test-report.html
+*Report: See testresults/data-driven_report.html
 
 ---
 
