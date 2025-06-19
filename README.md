@@ -36,12 +36,11 @@ postman-api-testing-portfolio/
 │   └── bruteforcesimulation_collection.json  # Brute force simulation collection
 │
 ├── test results/
-│   ├── functional_report.html              # Functional test report
-│   ├── data-driven_report.html            # Data-driven test report
-│   ├── registerUser-loadTest-report.html  # Performance: Register API test
-│   ├── validUserLogin-loadTest-report.html# Performance: Login API test
-│   └── bruteforcetest-report.html         # Security: Brute force attack simulation
-│
+│   ├── functional_testresult.png                           # Functional test report
+│   ├── data-driven-testresult.png                          # Data-driven test report
+│   ├── performance-test.png, performance-test1.png         # Performance: Register API test, Login API test
+│   ├── security-testresult.png                             # Security: Brute force attack simulation
+|
 └── README.md                              # Documentation and usage instructions
 
 ```
@@ -57,7 +56,7 @@ postman-api-testing-portfolio/
 * Collection: `functional_collection.json`
 * Environment: `functional_environment.json`
 * Run with: `newman` via GitHub Actions (Included in `postman-ci.yml` workflow)
-* Report: See test results/functional_report.html
+* Report: See test results/functional_testresult.png
 ---
 
 ## 🔁 Data-Driven Testing
@@ -69,7 +68,7 @@ postman-api-testing-portfolio/
 *Environment: data_driven_environment.json
 *Assertions: Validates fields like firstName, email, etc.
 *Run with: GitHub Actions using Newman + JSON (Included in `postman-ci.yml` workflow)
-*Report: See testresults/data-driven_report.html
+*Report: See testresults/data-driven-testresult.png
 
 ---
 
@@ -83,7 +82,7 @@ postman-api-testing-portfolio/
 * 20 unique users registered using `performancetest-data.json`
 * Validated with 200/201 status checks, response time checks
 * **Tool Used:** Postman → Collection → Performance tab
-* **Result:** Attached in test results/registerUser-loadTest-report.html`
+* **Result:** Attached in test results/performance-test.png
 
 ### 2. **Valid Login Load Test**
 
@@ -91,7 +90,7 @@ postman-api-testing-portfolio/
 * Used 20 valid user credentials
 * Test focuses on response time consistency and server throughput
 * **Tool Used:** Postman → Collection → Performance tab
-* **Result:** Attached in test results/validUserLogin-loadTest-report.html
+* **Result:** Attached in test results/performance-test1.png
 
 ---
 
@@ -102,7 +101,7 @@ postman-api-testing-portfolio/
 * Collection: `bruteforcesimulation_collection.json`
 * Data File: `bruteforce-data.json`
 * **Tool Used:** Postman → Collection → Performance tab(upload the json file before starting run)
-* **Result:** Attached in test results/bruteforcetest-report.html ``
+* **Result:** Attached in test results/security-testresult.png    ``
 
 ### 🔍 Observations:
 
